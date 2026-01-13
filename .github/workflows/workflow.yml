@@ -16,12 +16,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm CI
+          npm ci
 
       - name: Lint with ESLint
         run: |
-          npm run Lint
+          npm run lint
 
       - name: Run unit tests with Jest
-        run: |
-          npm test -- --coverage
+        run: npm test -- --coverage
